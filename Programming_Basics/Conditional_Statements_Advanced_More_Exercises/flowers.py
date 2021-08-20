@@ -8,6 +8,7 @@ if season == "Spring" or season == "Summer":
     chrysanthemum_price = 2
     roses_price = 4.10
     tulips_price = 2.50
+    
 elif season == "Autumn" or season == "Winter":
     chrysanthemum_price = 3.75
     roses_price = 4.50
@@ -23,8 +24,10 @@ if holiday == "Y":
 
 if tulips_bought > 7 and season == "Spring":
     bouquet_price *= 0.95
+    
 elif roses_bought >= 10 and season == "Winter":
     bouquet_price *= 0.90
+    
 if total_flowers > 20:
     bouquet_price *= 0.80
 
