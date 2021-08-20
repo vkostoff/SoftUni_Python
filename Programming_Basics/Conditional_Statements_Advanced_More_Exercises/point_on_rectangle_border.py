@@ -10,5 +10,6 @@ second_condition = (y == y1 or y == y2) and (x1 <= x <= x2)
 
 if first_condition or second_condition:
     print("Border")
+    
 else:
     print("Inside / Outside")
