@@ -1,4 +1,5 @@
 game_moves = int(input())
+
 points = 0
 invalid_numbers = 0
 numbers_0_to_9 = 0
@@ -6,23 +7,30 @@ numbers_10_to_19 = 0
 numbers_20_to_29 = 0
 numbers_30_to_39 = 0
 numbers_40_to_50 = 0
+
 for moves in range(1, game_moves + 1):
     move = int(input())
+    
     if 0 <= move <= 9:
         points += move * 0.2
         numbers_0_to_9 += 1
+        
     elif 10 <= move <= 19:
         points += move * 0.3
         numbers_10_to_19 += 1
+        
     elif 20 <= move <= 29:
         points += move * 0.4
         numbers_20_to_29 += 1
+        
     elif 30 <= move <= 39:
         points += 50
         numbers_30_to_39 += 1
+        
     elif 40 <= move <= 50:
         points += 100
         numbers_40_to_50 += 1
+        
     else:
         points /= 2
         invalid_numbers += 1
