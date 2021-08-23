@@ -1,4 +1,5 @@
 loads_count = int(input())
+
 price_per_ton = 0
 total_loads = 0
 bus = 0
@@ -7,14 +8,17 @@ train = 0
 
 for loads in range(1, loads_count + 1):
     load_tonnage = int(input())
+    
     if load_tonnage <= 3:
         bus += load_tonnage
         price_per_ton += 200 * load_tonnage
         total_loads += load_tonnage
+        
     if 4 <= load_tonnage <= 11:
         truck += load_tonnage
         price_per_ton += 175 * load_tonnage
         total_loads += load_tonnage
+        
     if load_tonnage >= 12:
         train += load_tonnage
         price_per_ton += 120 * load_tonnage
