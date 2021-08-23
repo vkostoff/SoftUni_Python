@@ -1,5 +1,6 @@
 stadium_capacity = int(input())
 all_fans = int(input())
+
 sector_a = 0
 sector_b = 0
 sector_v = 0
@@ -7,12 +8,16 @@ sector_g = 0
 
 for capacity in range(1, all_fans + 1):
     fan_in_sector = input()
+    
     if fan_in_sector == "A":
         sector_a += 1
+        
     if fan_in_sector == "B":
         sector_b += 1
+        
     if fan_in_sector == "V":
         sector_v += 1
+        
     if fan_in_sector == "G":
         sector_g += 1
 
