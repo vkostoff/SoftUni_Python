@@ -13,15 +13,15 @@ for students in range(1, students + 1):
         grade_two += 1
         total_grade += grade
         
-    if 3.00 <= grade <= 3.99:
+    elif 3.00 <= grade <= 3.99:
         grade_three += 1
         total_grade += grade
         
-    if 4.00 <= grade <= 4.99:
+    elif 4.00 <= grade <= 4.99:
         grade_four += 1
         total_grade += grade
         
-    if grade >= 5.00:
+    elif grade >= 5.00:
         grade_five += 1
         total_grade += grade
 
