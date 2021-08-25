@@ -17,18 +17,23 @@ while i <= ball_count:
     if color == "red":
         total_points += 5
         red_points += 1
+        
     elif color == "orange":
         total_points += 10
         orange_points += 1
+        
     elif color == "yellow":
         total_points += 15
         yellow_points += 1
+        
     elif color == "white":
         total_points += 20
         white_points += 1
+        
     elif color == "black":
         total_points //= 2
         black_points += 1
+        
     elif color != "red" and color != "orange" and color != "yellow" and color != "white" and color != "black":
         total_points = total_points
         other_points += 1
