@@ -1,4 +1,5 @@
 target_number = int(input())
+
 current_sum = 0
 
 while current_sum < target_number:
