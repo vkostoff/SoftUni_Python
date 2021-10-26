@@ -1,13 +1,16 @@
 budget = float(input())
-money = budget
 command = input()
+
+money = budget
 counter = 0
 product_price = 0
 money_over = False
+
 while command != "Stop":
     product_name = command
     product_price = float(input())
     counter += 1
+    
     if counter % 3 == 0:
         product_price *= 0.5
     if product_price > budget:
@@ -16,6 +19,7 @@ while command != "Stop":
     else:
         budget -= product_price
     command = input()
+    
 if money_over:
     print(f"You don't have enough money!")
     print(f"You need {product_price - budget:.2f} leva!")
