@@ -20,9 +20,11 @@ for fire in fire_list:
     if fire_type == "High":
         if 81 <= fire_value <= 125:
             valid = True
+            
     elif fire_type == "Medium":
         if 51 <= fire_value <= 80:
             valid = True
+            
     elif fire_type == "Low":
         if 1 <= fire_value <= 50:
             valid = True
