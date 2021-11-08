@@ -19,5 +19,6 @@ for i in second_half:
 
 if first_time < second_time:
     print(f"The winner is left with total time: {first_time:.1f}")
+    
 else:
     print(f"The winner is right with total time: {second_time:.1f}")
