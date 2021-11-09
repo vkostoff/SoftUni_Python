@@ -9,6 +9,7 @@ def add_and_subtract(a, b, c):
 
     def subtract():
         return sum_numbers() - c
+    
     return subtract()
 
 
