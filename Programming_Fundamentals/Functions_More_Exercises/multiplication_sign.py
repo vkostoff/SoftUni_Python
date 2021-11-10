@@ -10,6 +10,7 @@ def multiplication_sign(a, b, c):
             return "negative"
         elif b == 0 or c == 0:
             return "zero"
+        
     elif a > 0:
         if b < 0 and c < 0:
             return "positive"
@@ -19,8 +20,10 @@ def multiplication_sign(a, b, c):
             return "positive"
         elif b == 0 or c == 0:
             return "zero"
+        
     elif a == 0:
         return "zero"
+    
     elif b < 0:
         if a < 0 < c:
             return "positive"
@@ -32,6 +35,7 @@ def multiplication_sign(a, b, c):
             return "negative"
         elif a == 0 or c == 0:
             return "zero"
+        
     elif b > 0:
         if a < 0 and c < 0:
             return "positive"
@@ -41,8 +45,10 @@ def multiplication_sign(a, b, c):
             return "positive"
         elif a == 0 or c == 0:
             return "zero"
+        
     elif b == 0:
         return "zero"
+    
     elif c < 0:
         if a < 0 < b:
             return "positive"
@@ -54,6 +60,7 @@ def multiplication_sign(a, b, c):
             return "negative"
         elif a == 0 or b == 0:
             return "zero"
+        
     elif c > 0:
         if a < 0 and b < 0:
             return "positive"
@@ -63,6 +70,7 @@ def multiplication_sign(a, b, c):
             return "positive"
         elif a == 0 or b == 0:
             return "zero"
+        
     elif c == 0:
         return "zero"
 
