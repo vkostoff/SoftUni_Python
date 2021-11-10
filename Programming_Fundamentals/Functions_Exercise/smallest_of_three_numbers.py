@@ -5,12 +5,16 @@ number_three = int(input())
 
 def smallest_integer(a, b, c):
     smallest = 0
+    
     if a < b and a < c:
         smallest = a
+        
     elif b < a and b < c:
         smallest = b
+        
     elif c < a and c < b:
         smallest = c
+        
     return smallest
 
 
