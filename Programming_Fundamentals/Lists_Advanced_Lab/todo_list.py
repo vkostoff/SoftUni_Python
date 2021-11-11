@@ -4,6 +4,7 @@ while True:
     command = input()
     if command == "End":
         break
+        
     tokens = command.split("-")
     priority = int(tokens[0]) + 1
     note = tokens[1]
