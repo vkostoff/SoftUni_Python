@@ -30,27 +30,34 @@ for r in range(rows):
             row = r
             column = c
             dots_connected = 0
+            
             while True:
                 if board[row][column] == "-":
                     break
+                    
                 elif check_right(board, row, column):
                     visited_indexes.append([row, column])
                     column += 1
+                    
                 elif check_left(board, row, column):
                     visited_indexes.append([row, column])
                     column -= 1
+                    
                 elif check_up(board, row, column):
                     visited_indexes.append([row, column])
                     row -= 1
+                    
                 elif check_down(board, row, column):
                     visited_indexes.append([row, column])
                     row += 1
+                    
                 else:
                     board[row][column] = "-"
                     visited_indexes = []
                     dots_connected += 1
                     row = r
                     column = c
+                    
                     if dots_connected > max_dots:
                         max_dots = dots_connected
 
