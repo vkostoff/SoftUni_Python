@@ -45,17 +45,21 @@ moves = 0
 for i in range(rows):
     row = list(input())
     maze.append(row)
+    
 position = find_kate(maze)
 escaped = False
+
 while True:
     check_up(position, maze, passed)
     check_down(position, maze, rows, passed)
     check_right(position, maze, passed)
     check_left(position, maze, passed)
+    
     if position[0] == 0 or position[0] == rows - 1 or position[1] == 0 or position[1] == len(maze[0]) - 1:
         print(f"Kate got out in {len(passed) + 1} moves")
         escaped = True
         break
+        
     if maze[position[0]][position[1] + 1] == "#" and maze[position[0]][position[1] - 1] == "#"\
             and maze[position[0] + 1][position[1]] == "#" and maze[position[0] - 1][position[1]] == "#":
         escaped = False
