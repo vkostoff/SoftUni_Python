@@ -6,9 +6,11 @@ people_count = int(input())
 people_per_hour = first_employee + second_employee + third_employee
 
 hours = 0
+
 while people_count > 0:
     people_count -= people_per_hour
     hours += 1
+    
     if hours % 4 == 0:
         hours += 1
 
