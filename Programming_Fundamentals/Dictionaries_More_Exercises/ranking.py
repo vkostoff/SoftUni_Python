@@ -6,11 +6,14 @@ command = input()
 while not command == "end of contests":
     if len(command) == 0:
         exit()
+        
     command = command.split(":")
     contest = command[0]
     password_for_contest = command[1]
+    
     if contest not in contest_password_record:
         contest_password_record[contest] = password_for_contest
+        
     command = input()
 
 command_two = input()
@@ -20,17 +23,21 @@ while not command_two == "end of submissions":
     password = command_two[1]
     username = command_two[2]
     points = int(command_two[3])
+    
     if contest in contest_password_record:
         if contest_password_record[contest] == password:
             if username not in submissions:
                 submissions[username] = {contest: points}
                 best_result[username] = points
+                
             elif username in submissions and contest not in submissions[username]:
                 submissions[username][contest] = points
                 best_result[username] += points
+                
             elif points > submissions[username][contest]:
                 submissions[username][contest] = points
                 best_result[username] += points
+                
     command_two = input()
 
 sorted_results = dict(sorted(best_result.items(), key=lambda x: -x[1]))
