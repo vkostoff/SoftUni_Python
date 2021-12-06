@@ -5,6 +5,7 @@ command = input()
 while not command == "Once upon a time":
     name, color, physics = command.split(" <:> ")
     physics = int(physics)
+    
     if name not in dwarfs:
         dwarfs[name] = [color, physics]
 
